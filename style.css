@@ -1,0 +1,207 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('5.jpg');
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+}
+
+/* Додано анімацію для header і main */
+.animate {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header {
+  background-color: #bf8f68; /* Коричневий фон */
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.clinic-name {
+  font-size: 3em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header {
+    padding: 5px;
+  }
+
+  .clinic-name {
+    font-size: 2em;
+  }
+}
+
+/* Form Styles */
+form {
+  margin-top: 20px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+form button {
+  background-color: #bf8f68;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Message Styles */
+.success-message,
+.error-message {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.success-message {
+  background-color: #4caf50; /* Зелений колір для успішного повідомлення */
+}
+
+.error-message {
+  background-color: #f44336; /* Червоний колір для повідомлення про помилку */
+}
+
+.contact-info-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.about-us {
+    color: black;
+    padding: 20px;
+    margin-left: -20px;
+    margin-top: 20px;
+    width: 100%; /* Зробимо фон розділу "Про нас" на всю ширину */
+}
+
+.about-us p {
+    margin-bottom: 15px;
+}
+
+#selectService {
+    width: 100%;
+    height: 150px;
+}
+
+#appointmentDateTime {
+    width: 100%;
+}
+
+#appointmentForm {
+    max-width: 600px; /* або будь-яка інша ширина, яку ви хочете встановити */
+    margin: 0 auto; /* це центрує форму на сторінці */
+}
+
+h3{
+  background-color: #bf8f68;
+  width: 100vw;
+  color: white;
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+}
+h2{
+  background-color: #bf8f68;
+  width: 100vw;
+  color: white;
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Зміни для кнопки запису на прийом */
+#btnBookAppointment {
+  background-color: #bf8f68;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#btnBookAppointment:hover {
+  background-color: #996641;
+}
+
+/* Зміни для кнопки підтвердження адміністратора */
+#btnConfirm {
+  background-color: #bf8f68;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#btnConfirm:hover {
+  background-color: #996641;
+}
+
+/* Зміни для кнопки надання результатів лікаря */
+#btnProvideResults {
+  background-color: #bf8f68;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#btnProvideResults:hover {
+  background-color: #996641;
+}
